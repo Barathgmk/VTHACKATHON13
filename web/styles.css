@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; padding: 20px; background: #f7fafc; color: #111827 }
+h1 { margin-bottom: 10px }
+.panel { background: #fff; padding: 12px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); margin-bottom: 12px }
+label { display: block; margin: 6px 0 }
+input, select { padding: 6px; margin-left: 6px }
+button { padding: 8px 12px; margin-top: 8px }
+pre { background: #111827; color: #f8fafc; padding: 12px; border-radius: 6px; overflow:auto }

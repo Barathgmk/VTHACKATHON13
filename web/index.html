@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EZDiet — Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>EZDiet — Demo</h1>
+  <div id="app">
+    <div class="panel">
+      <h2>Goal-first flow</h2>
+      <label>Sex: <select id="g_sex"><option>male</option><option>female</option></select></label>
+      <label>Age: <input id="g_age" type="number" value="30"></label>
+      <label>Height (cm): <input id="g_height" type="number" value="170"></label>
+      <label>Weight (kg): <input id="g_weight" type="number" value="70"></label>
+      <label>Activity: <select id="g_activity"><option>sedentary</option><option>light</option><option selected>moderate</option><option>active</option><option>very_active</option></select></label>
+      <label>Goal: <select id="g_goal"><option>lose</option><option selected>maintain</option><option>gain</option></select></label>
+      <label>Weekly rate (kg): <input id="g_weekly" type="number" step="0.1" value="0.5"></label>
+      <label>Dietary restrictions (comma): <input id="g_diet" placeholder="vegan,gluten_free"></label>
+      <label>Budget ($): <input id="g_budget" type="number" value="20"></label>
+      <button id="g_run">Generate plan</button>
+    </div>
+
+    <div class="panel">
+      <h2>Numbers-first flow</h2>
+      <label>Calories: <input id="n_cal" type="number" value="2000"></label>
+      <label>Protein (g): <input id="n_pro" type="number" value="140"></label>
+      <label>Carbs (g): <input id="n_carbs" type="number" value="200"></label>
+      <label>Fat (g): <input id="n_fat" type="number" value="70"></label>
+      <label>Dietary restrictions (comma): <input id="n_diet" placeholder="vegan,gluten_free"></label>
+      <label>Budget ($): <input id="n_budget" type="number" value="20"></label>
+      <button id="n_run">Generate plan</button>
+    </div>
+
+    <div class="panel">
+      <h2>Results</h2>
+      <pre id="results">No results yet.</pre>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
